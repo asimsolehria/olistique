@@ -4,7 +4,7 @@
     <title>
       Italic
     </title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" charset="UTF-8">
     <style>
       a:hover {
         text-decoration: none !important
@@ -115,12 +115,12 @@
       }
       @media (prefers-dark-interface) {
         body {
-          -apple-color-filter: none
+          -apple-color-filter: none;
         }
       }
     </style>
   </head>
-  <body style="margin:0; padding:0">
+  <body style="margin:0; padding:0;">
     <table cellpadding="0" cellspacing="0" style="background:#fff; min-width:320px;" width="100%">
       <tbody>
         <tr>
@@ -158,7 +158,7 @@
                                     <table cellpadding="0" cellspacing="0" width="100%">
                                       <tbody>
                                         
-                                          <td align="center" class="wi-80p" style="mso-line-height-rule:exactly; padding:0 0 29px"> <a style="color:#fff; outline:none; text-decoration:none" href="https://www.olistique.be/">
+                                          <td align="center" class="wi-80p" style="mso-line-height-rule:exactly; padding:10px 0 29px"> <a style="color:#fff; outline:none; text-decoration:none" href="https://www.olistique.be/">
                                               <img alt="Leaving the Competition  Out to Dry" src="https://www.olistique.be/wp-content/uploads/2022/04/logo-white.png" style="border:none;  font:bold 16px/20px Arial, Helvetica, sans-serif; color:#000; vertical-align:top" width="200">
                                             </a>
                                           </td>
@@ -196,8 +196,8 @@
                     <table align="center" cellpadding="0" cellspacing="0" style="max-width:515px; width:100% !important; margin:0 auto;" width="515">
                       <tbody>
                         <tr>
-                          <td align="center" class="wi-80p" style="mso-line-height-rule:exactly; padding:0 0 23px; font:20px/35px Arial, Helvetica, sans-serif; color:#3B2B6E; letter-spacing:0.6px">
-                            <strong>Bonjour <?php if($appointment->get_order())echo $appointment->get_order()->get_billing_first_name() ?><br>
+                          <td align="center" style="mso-line-height-rule:exactly; padding:0 0 23px; font:20px/35px Arial, Helvetica, sans-serif; color:#3B2B6E; letter-spacing:0.6px">
+                            <strong>Bonjour <?php if($appointment->get_order())echo $appointment->get_order()->get_billing_first_name()." &#128075;"; ?> <br>
                             Merci pour votre reservation</strong> 
                         </td>
                         </tr>
@@ -211,16 +211,16 @@
                                       <tbody>
                                         <tr >
                                           <td align="center"  style="mso-line-height-rule:exactly; padding:10px 10px 13px; font:20px/35px Arial, Helvetica, sans-serif; color:#000; letter-spacing:0.6px; vertical-align: top; width: 75px;">
-                                            <img src="https://www.olistique.be/wp-content/uploads/2022/04/contact.png" alt="" width="110">
+                                            <img src="https://www.olistique.be/wp-content/uploads/2022/04/user.png" alt="" width="110">
                                           </td>
                                           
                                           <td align="left" style="mso-line-height-rule:exactly; padding:0px 25px 13px; font:20px/35px Arial, Helvetica, sans-serif; color:#3B2B6E; letter-spacing:0.6px">
                                             Votre professionnel
-                                            <br class="hm">
+                                            <br>
                                             <strong><?php echo $appointment->get_staff_members( true ); ?></strong>
 											<br>
 											Votre service
-                                            <br class="hm">
+                                            <br>
 											
                                             <strong> <?php echo $appointment->get_product_name() ?></strong>
                                             <br>
@@ -262,17 +262,17 @@
                                       <tbody>
                                         <tr >
                                           <td align="center"  style="mso-line-height-rule:exactly; padding:10px 10px 13px; font:20px/35px Arial, Helvetica, sans-serif; color:#000; letter-spacing:0.6px; vertical-align: top;width: 75px;">
-                                            <img src="https://www.olistique.be/wp-content/uploads/2022/04/calendar.png" alt="" width="110">
+                                            <img src="https://www.olistique.be/wp-content/uploads/2022/04/Calendar-1.png" alt="" width="110">
                                           </td>
                                           
                                           <td align="left" style="mso-line-height-rule:exactly; padding:0px 25px 13px; font:20px/35px Arial, Helvetica, sans-serif; color:#3B2B6E; letter-spacing:0.6px">
                                               Date et heure
-                                            <br class="hm">
+                                            <br>
                                             <strong><?php echo $appointment->get_start_date()  ?></strong>
-											<br>
+											                      <br>
 
-											Duree du RDV
-                                            <br class="hm">
+											                      Duree du RDV
+                                            <br>
                                             <strong><?php echo $appointment->get_duration() ?></strong>
                                             <br>
                                           </td>
@@ -291,7 +291,7 @@
                           </td>
                         </tr>
                         
-                        <!-- <tr>
+                        <tr>
                           <td style="mso-line-height-rule:exactly; padding:0 0 21px">
                             <table cellpadding="0" cellspacing="0" width="100%">
                               <tbody>
@@ -301,13 +301,13 @@
                                       <tbody>
                                         <tr >
                                           <td align="center"  style="mso-line-height-rule:exactly; padding:10px 10px 13px; font:20px/35px Arial, Helvetica, sans-serif; color:#000; letter-spacing:0.6px; vertical-align: top;width: 75px;">
-                                            <img src="https://www.olistique.be/wp-content/uploads/2022/04/location.png" alt="" width="110">
+                                            <img src="https://www.olistique.be/wp-content/uploads/2022/04/Adress.png" alt="" width="110">
                                           </td>
                                           
 										  
                                           <td align="left" style="mso-line-height-rule:exactly; padding:0px 25px 13px; font:20px/35px Arial, Helvetica, sans-serif; color:#3B2B6E; letter-spacing:0.6px">
                                             Adresse
-                                            <br class="hm">
+                                            <br>
 
 											<?php if ($wc_order) {
 												foreach ($wc_order->get_items() as $key => $value) {
@@ -318,19 +318,22 @@
 											} 
 											$vendor = get_userdata( $vendor_id );
 
+											$vendor_address1 = get_user_meta( $vendor_id, '_wcv_store_address1', true );
 											$vendor_address2 = get_user_meta( $vendor_id, '_wcv_store_address2', true );
 											$vendor_city = get_user_meta( $vendor_id, '_wcv_store_city', true );
 											$vendor_state = isset( WC()->countries->states[ get_user_meta( $vendor_id, '_wcv_store_country', true ) ][ get_user_meta( $vendor_id, '_wcv_store_state', true ) ] ) ? WC()->countries->states[ get_user_meta( $vendor_id, '_wcv_store_country', true ) ][ get_user_meta( $vendor_id, '_wcv_store_state', true ) ] : get_user_meta( $vendor_id, '_wcv_store_country', true );
 											$vendor_country = WC()->countries->countries[ get_user_meta( $vendor_id, '_wcv_store_country', true ) ];
-											$vendor_address = sprintf( '<br />%s, %s <br />%s', $vendor_city, $vendor_state, $vendor_address2 );
+											$vendor_postcode=get_user_meta( $vendor_id, '_wcv_store_postcode', true );
 												
 										  	?>
 
-												<strong><?php echo $vendor_address ?> </strong>
+												<strong><?php echo $vendor_address1 ?> </strong>
+                        <strong><?php echo $vendor_address2 ?> </strong>
 												<strong><?php echo $vendor_city ?> </strong>
+												<strong><?php echo $vendor_postcode?> </strong>
 												<strong><?php echo $vendor_state ?> </strong>
 												<strong><?php echo $vendor_country ?> </strong>
-												<strong><?php echo $vendor->user_email?> </strong>
+												
 												
 												
 												
@@ -345,7 +348,7 @@
                               </tbody>
                             </table>
                           </td>
-                        </tr> -->
+                        </tr>
                         
                         
                       </tbody>
@@ -363,13 +366,13 @@
 
                 <!-- footer -->
                 <tr>
-                  <td class="ptb-30" style="mso-line-height-rule:exactly; background:#fff; padding:10px 15px">
+                  <td class="ptb-30" style="mso-line-height-rule:exactly; background:#fff; padding:10px 15px;">
                     <table cellpadding="0" cellspacing="0" width="100%">
                       <tbody>
                         
                         <tr>
-                          <td align="center" class="pb-30" style="mso-line-height-rule:exactly; font:15px/35px Arial, Helvetica, sans-serif; color:#3B2B6E; letter-spacing:0.6px">
-                            <p style="margin:0 0 10px"> N'oubliez pas d'ajouter votre RDV <br> dans votre calendrier en un clic!
+                          <td align="center" class="pb-30" style="mso-line-height-rule:exactly; font:15px Arial, Helvetica, sans-serif; color:#3B2B6E; letter-spacing:0.6px">
+                            <p> N'oubliez pas d'ajouter votre RDV <br> dans votre calendrier en un clic!
                             </p>
                             
                           </td>
@@ -388,7 +391,7 @@
 									}
 								?>
                                   <td align="center" class="btn-03" style="mso-line-height-rule:exactly; transition:all 0.3s ease; background:#55CECF; mso-padding-alt:5px 15px; font:700 12px/17px Arial, Helvetica, sans-serif; border-radius:5px">
-                                    <a style="color:#fff; outline:none; text-decoration:none; transition:all 0.3s ease; display:block; padding:15px 75px" href="<?php echo $download_url?>">Ajouter a mon calendrier</a>
+                                    <a style="color:#fff; outline:none; text-decoration:none; transition:all 0.3s ease; display:block; padding:15px 75px;font-size: 17px !important;font-weight: bold;" href="<?php echo $download_url?>">Ajouter a mon calendrier</a>
                                   </td>
                                 </tr>
                               </tbody>
@@ -396,8 +399,8 @@
                           </td>
                         </tr>
                         <tr>
-                          <td align="center" class="pb-30" style="mso-line-height-rule:exactly; font:15px/35px Arial, Helvetica, sans-serif; color:#3B2B6E; letter-spacing:0.6px">
-                            <p style="margin:0 0 10px"> Vous souhaitez replanifier votre RDV ? <br> Accedez a vos reservations ici
+                          <td align="center" class="pb-30" style="mso-line-height-rule:exactly; font:15px Arial, Helvetica, sans-serif; color:#3B2B6E; letter-spacing:0.6px">
+                            <p> Vous souhaitez replanifier votre RDV ? <br> Accedez a vos reservations ici
                             </p>
                             
                           </td>
@@ -408,7 +411,7 @@
                               <tbody>
                                 <tr>
                                   <td align="center" class="btn-03" style="mso-line-height-rule:exactly; transition:all 0.3s ease; background:#55CECF; mso-padding-alt:5px 15px; font:700 12px/17px Arial, Helvetica, sans-serif; border-radius:5px">
-                                    <a style="color:#fff; outline:none; text-decoration:none; transition:all 0.3s ease; display:block; padding:15px 75px" href="https://www.olistique.be/mon-compte/appointments/">Replanifier ce RDV</a>
+                                    <a style="color:#fff; outline:none; text-decoration:none; transition:all 0.3s ease; display:block; padding:15px 75px;font-size: 17px;font-weight: bold;" href="https://www.olistique.be/mon-compte/appointments/">Replanifier ce RDV</a>
                                   </td>
                                 </tr>
                               </tbody>
@@ -436,14 +439,14 @@
                           </td>
                         </tr>
                         <tr>
-                          <td style="mso-line-height-rule:exactly">
+                          <td>
                             <table align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
                               <tbody>
                                 <tr>
                                   <th align="left" class="tflex h-u ta-c" style="padding:0; font:400 12px/20px Arial, Helvetica, sans-serif; color:#808080; text-transform:uppercase; letter-spacing:0.6px; vertical-align:top">
-                                    <a style="color:#3B2B6E; outline:none; text-decoration:none" href="https://www.olistique.be/termes-conditions/">Nos conditions generales . </a>
+                                    <a style="color:#3B2B6E; outline:none; text-decoration:none" href="https://www.olistique.be/termes-conditions/">Nos conditions generales 	&nbsp; </a>
                                   </th>
-                                  <th class="tflex" height="15" style="padding:0" width="28"></th>
+                                  <!-- <th class="tflex" height="15" style="padding:0" width="28"></th> -->
                                   <th align="left" class="tflex h-u ta-c" style="padding:0; font:400 12px/20px Arial, Helvetica, sans-serif; color:#808080; text-transform:uppercase; letter-spacing:0.6px; vertical-align:top">
                                     <a style="color:#3B2B6E; outline:none; text-decoration:none" href="https://www.olistique.be/politique-de-confidentialite/">Politique de confidentialite</a>
                                   </th>
